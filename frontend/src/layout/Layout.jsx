@@ -7,7 +7,7 @@ export function Layout() {
     <div className="app-layout">
       <header className="app-header">
         <div className="header-content">
-          <h1>NAGA v1</h1>
+          <h1>Code Challenge Generator</h1>
           <nav>
             <SignedIn>
               <Link to="/">Generate Challenge</Link>
@@ -17,9 +17,10 @@ export function Layout() {
           </nav>
         </div>
       </header>
+
       <main className="app-main">
         <SignedOut>
-          <Navigate to="sign-in" replace />
+          <Navigate to="/sign-in" replace />
         </SignedOut>
         <SignedIn>
           <Outlet />
